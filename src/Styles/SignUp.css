@@ -1,7 +1,6 @@
 .auth-container {
     max-width: 400px;
-    margin-top: 50px;
-    margin-left: 550px;
+    margin: 50px auto;
     padding: 20px;
     border: 1px solid #ccc;
     border-radius: 8px;
@@ -50,5 +49,21 @@
   
   .auth-form p button:hover {
     text-decoration: underline;
+  }
+
+  @media (max-width: 768px) {
+    .auth-container {
+      max-width: 90%;
+      margin: 20px auto;
+      padding: 15px;
+    }
+  
+    .auth-form input {
+      padding: 8px;
+    }
+  
+    .auth-form button {
+      padding: 8px;
+    }
   }
   
