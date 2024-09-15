@@ -28,7 +28,8 @@ const SignUp = ({ setShowLogin }) => {
 
   return (
     <div className="auth-container">
-      <h1>Let's Kook</h1>
+      <h1>Sign Up</h1>
+      <h2>Let's Kook</h2>
       <form onSubmit={handleSignUp} className="auth-form">
         <label htmlFor="name">Name</label>
         <input

@@ -6,7 +6,9 @@
     border-radius: 8px;
     box-shadow: 0 0 10px rgba(7, 18, 173, 0.5);
   }
-  
+  h1{
+    text-align: center;
+  }
   .auth-form {
     display: flex;
     flex-direction: column;
