@@ -1,0 +1,49 @@
+.home-page {
+  height: 100vh;
+  padding: 20px;
+  text-align: center;   
+  }
+  
+  .search-form {
+    margin-bottom: 20px;
+  }
+  
+  .search-bar {
+    padding: 10px;
+    min-width: 400px;
+    margin-right: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    background: rgba(255, 255, 255, 0.8);
+  }
+  
+  .search-button {
+    padding: 10px 15px;
+    border: none;
+    background-color: #28a745;
+    color: white;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .recipe-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
+  @media (max-width: 768px) {
+    .search-bar {
+      min-width: 100%; /* Make the search bar fill the available space on smaller screens */
+      margin-bottom: 10px;
+    }
+  
+    .search-button {
+      width: 100%; /* Make the button full width for smaller screens */
+    }
+  
+    .recipe-list {
+      flex-direction: column; /* Stack recipes vertically on smaller screens */
+      gap: 15px;
+    }
+  }

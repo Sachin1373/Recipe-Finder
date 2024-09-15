@@ -1,0 +1,106 @@
+.recipe-card {
+  position: relative; 
+  width: 250px; 
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 10px;
+  text-align: center;
+}
+
+.recipe-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.recipe-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  margin-bottom: 5px;
+}
+
+.recipe-title {
+  font-weight: 700;
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+
+.icon-container {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.favorite-icon {
+  margin-bottom: 10px; 
+  color: #e74c3c;
+  cursor: pointer;
+  font-size: 24px; 
+  width: 50px;
+  height: 50px; 
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: color 0.3s ease, transform 0.2s ease, box-shadow 0.2s ease; 
+}
+
+.favorite-icon:hover {
+  color: #e8240f;
+  
+}
+
+.favorite-icon:active {
+  transform: scale(0.9); 
+  box-shadow: inset 0 2px 5px rgba(0, 0, 0, 0.2); 
+}
+
+
+.remove-icon {
+  position: absolute;
+  top: 10px; 
+  right: 10px; 
+  font-size: 20px;
+  color: red;
+  cursor: pointer;
+  z-index: 1; 
+}
+
+.remove-icon:hover {
+  opacity: 0.8;
+}
+
+/* Media query for mobile responsiveness */
+@media (max-width: 768px) {
+  .recipe-card {
+    width: 100%; /* Make recipe cards full-width on smaller screens */
+    padding: 15px; /* Adjust padding */
+    margin: 10px 0; /* Add space between cards */
+  }
+
+  .recipe-image {
+    height: 120px; /* Reduce image height for smaller screens */
+  }
+
+  .favorite-icon {
+    width: 40px; /* Adjust icon size */
+    height: 40px; 
+    font-size: 20px; /* Adjust icon font size */
+  }
+
+  .recipe-title {
+    font-size: 14px; /* Reduce font size for the recipe title */
+  }
+
+  .icon-container {
+    top: 5px;
+    right: 5px;
+  }
+}
