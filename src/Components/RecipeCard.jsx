@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../styles/RecipeCard.css'; 
+import '../Styles/RecipeCard.css'; 
 import { FaHeart, FaRegHeart, FaTrashAlt } from 'react-icons/fa';
 
 const RecipeCard = ({ recipe, onAddToFavorites, onRemoveFromFavorites }) => {
